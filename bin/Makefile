@@ -125,4 +125,4 @@ subclean:
 
 installcheck: sql/init.sql sql/load_function.sql sql/load_filter.sql
 
-LDFLAGS+=-Wl,--build-id
+LDFLAGS+=-Wl,--build-id -L/usr/lib/postgresql/10/lib
